@@ -59,15 +59,15 @@ def pearson_hash(key:str) -> int:
 
 ### 해시충돌 해결 전략 1
 
-- [Separate Chaining](https://en.wikipedia.org/wiki/Hash_table#Separate_chaining_with_linked_lists)
+1. [Separate Chaining](https://en.wikipedia.org/wiki/Hash_table#Separate_chaining_with_linked_lists)
 
-- [Open Addressing](https://en.wikipedia.org/wiki/Open_addressing)
+2. [Open Addressing](https://en.wikipedia.org/wiki/Open_addressing)
 
-  - 빠르지만 구현이 복잡합니다. 여기서 빠르다는 의미는 Cache Friendly하고 SIMD(Single Instruction Multiple Data) Friendly하다는 뜻입니다. 평상시 저희가 쓰는 대부분의 해시테이블은 Open Addressing으로 구현되어 있습니다.
+빠르지만 구현이 복잡합니다. 여기서 빠르다는 의미는 Cache Friendly하고 SIMD(Single Instruction Multiple Data) Friendly하다는 뜻입니다. 평상시 저희가 쓰는 대부분의 해시테이블은 Open Addressing으로 구현되어 있습니다.
 
-* 구현 방법
-  - Backshifting
-  - Tombstone
+구현 방법
+- Backshifting
+- Tombstone
 
 ```python
 # Open Addressing - tombstone 사용하기
@@ -100,9 +100,11 @@ def insert_item(n:int)->bool:
 해시테이블의 50%가 차면 테이블 리사이징을 해서 해시테이블의 크기를 두배로 늘릴 수 있습니다.
 리해싱의 방법에는 크게 두 가지가 있습니다.
 
-* All-at-once Rehashing
-  - 해시알고리즘 특성상 테이블 크기가 변하면 기존 테이블 안에있던 원소들을 모조리 움직여줘야 합니다. 해시가 너무 클 경우에는 사용하지 못할 때도 있습니다.
+1. All-at-once Rehashing
 
-* Incremental Rehashing
-  - 일시적으로 기존 테이블과 크기가 두배로 커진 테이블 두개를 동시에 운용하고 일시적으로는 삽입/접근 연산을 할때에 테이블 두개를 모두 접근합니다.
-  - 테이블 두개를 모두 접근할때마다 기존 테이블에 있던 원소를 새 테이블로 옮겨갑니다. All-at-once rehashing에 비해 한번에 리해싱하느라 특정시점에 쏠린 부하를 여러 시간에 조금씩 퍼뜨린다는 특징이 있습니다.
+- 해시알고리즘 특성상 테이블 크기가 변하면 기존 테이블 안에있던 원소들을 모조리 움직여줘야 합니다. 해시가 너무 클 경우에는 사용하지 못할 때도 있습니다.
+
+2. Incremental Rehashing
+
+- 일시적으로 기존 테이블과 크기가 두배로 커진 테이블 두개를 동시에 운용하고 일시적으로는 삽입/접근 연산을 할때에 테이블 두개를 모두 접근합니다.
+- 테이블 두개를 모두 접근할때마다 기존 테이블에 있던 원소를 새 테이블로 옮겨갑니다. All-at-once rehashing에 비해 한번에 리해싱하느라 특정시점에 쏠린 부하를 여러 시간에 조금씩 퍼뜨린다는 특징이 있습니다.
