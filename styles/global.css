@@ -1,10 +1,13 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
+  font-family: 'Spoqa Han Sans',
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 18px;
 }
 
@@ -13,7 +16,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #1565C0;
   text-decoration: none;
 }
 
