@@ -4,7 +4,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	font-family: 'Fira Mono', monospace;
 	font-size: 14px;
-	color: #616161;
+	color: #212121;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -36,12 +36,14 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background-color: #EEEEEE;
+	color: #757575;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
+	white-space: normal;
 }
 
 .token.comment,
@@ -66,7 +68,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #616161;
+	color: #3E2723;
 }
 
 .token.selector,
@@ -76,23 +78,23 @@ pre[class*="language-"] {
 .token.builtin,
 .token.url,
 .token.inserted {
-	color: #616161;
+	color: #8D6E63;
 }
 
 .token.entity {
-	color: #616161;
+	color: #757575;
 	background: #eee8d5;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #616161;
+	color: #a1660d;
 }
 
 .token.function,
 .token.class-name {
-	color:#616161;
+	color: #0D47A1;
 }
 
 .token.regex,
