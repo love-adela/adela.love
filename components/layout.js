@@ -3,8 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Adela Chung'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'adela.love'
+export const siteTitle = 'adela.love'
 
 export default function Layout({ children, home }) {
   return (
@@ -61,6 +61,17 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer>
+        <small>
+          made with
+          <a href="https://nextjs.org/"> Next.js </a>
+          + 
+          <a href="#"> Vercel </a>
+          + 
+          <a href="#"> source code</a>
+          <p>© 2020 <b>Adela Chung</b> All rights reserved.</p>
+        </small>
+      </footer>
     </div>
   )
 }
