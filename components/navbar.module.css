@@ -1,0 +1,56 @@
+.headerNavbar {
+  position: fixed;
+  display: flex;
+  -moz-box-align: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  -moz-box-pack:justify;
+  justify-content: space-between;
+  background-color: red;
+  top: 0px;
+  /* left: 0px;
+  right: 0px;
+  padding: 0px 42px; */
+  height: 60px;
+  width: 100%;
+}
+
+.headerLogo {
+  margin: 0;
+  display: flex;
+}
+
+.headerLogo li {
+  display: inline-block;
+}
+
+.headerHomeName {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  /* margin: 4rem 1rem; */
+  color: #424242;
+}
+
+.headerHomeAbout {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.headerHomeAbout h2{
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  /* margin: 4rem 1rem; */
+  color: #424242; 
+}
+
+.headerHomeImage {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
