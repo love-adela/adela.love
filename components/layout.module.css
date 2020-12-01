@@ -4,22 +4,19 @@
   margin: 3rem auto 6rem;
 }
 
-/* .header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
-} */
+}
 
 .headerImage {
   width: 6rem;
   height: 6rem;
 }
 
-.headerHomeImage {
-  width: 4rem;
-  height: 4rem;
-}
+
 
 .backToHome {
   margin: 3rem 0 0;
