@@ -2,13 +2,14 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import NavBar from './navbar'
 
 const name = 'adela.love'
 export const siteTitle = 'adela.love'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Head>
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <meta
@@ -24,38 +25,26 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      {home ? (
+        <>
+          <NavBar />
+        </>
+      ) : (
       <header className={styles.header}>
-        {home ? (
-          <>
-            <nav className={utilStyles.headerNavbar}>
-              <div className={utilStyles.headerLogo}>
-                <a>
-                  <img src="/images/profile.jpg" className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`} alt={name}/>
-                  <h1 className={utilStyles.headerHomeName}>{name}</h1>
-                </a>
-              </div>
-              <Link href="/about">
-                <div className={utilStyles.headerHomeAbout}>
-                  <a><h2>About</h2></a>
-                </div>
-              </Link>
-            </nav>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-          </>
-        )}
+      <>
+        <Link href="/">
+          <a>
+            <img
+              src="/images/profile.jpg"
+              className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+              alt={name}
+            />
+          </a>
+        </Link>
+      </>
       </header>
-      <main>{children}</main>
+      )}
+      <main className={styles.container}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
