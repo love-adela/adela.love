@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Adela의 블로그"
         />
         <meta
           property="og:image"
@@ -47,12 +47,12 @@ export default function Layout({ children, home }) {
       <main className={styles.container}>{children}</main>
       <footer>
         <small>
-          made with
+        ✨ made with
           <a href="https://nextjs.org/"> Next.js </a>
           + 
           <a href="#"> Vercel </a>
           + 
-          <a href="#"> source code</a>
+          <a href="#"> source code ✨</a>
           <p>© 2020 <b>Adela Chung</b> All rights reserved.</p>
         </small>
       </footer>
