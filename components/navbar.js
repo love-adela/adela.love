@@ -9,10 +9,8 @@ export default function NavBar() {
       <nav className={styles.headerNavbar}>
         <Link href="/">
           <ul className={styles.headerLogo}>
-            <a>
-              <li><img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name}/></li>
-              <li><h1 className={styles.headerHomeName}>{name}</h1></li>
-            </a>
+            <li><a><img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name}/></a></li>
+            <li><a><h1 className={styles.headerHomeName}>{name}</h1></a></li>
           </ul>
           </Link>
           <Link href="/about">
