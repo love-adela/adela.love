@@ -49,10 +49,10 @@ export default function Layout({ children, home }) {
         <small>
         ✨ made with
           <a href="https://nextjs.org/"> Next.js </a>
-          + 
-          <a href="#"> Vercel </a>
-          + 
-          <a href="#"> source code ✨</a>
+          & 
+          <a href="https://vercel.com/"> Vercel </a>
+          & 
+          <a href="https://github.com/love-adela/adela.love"> source code ✨</a>
           <p>© 2020 <b>Adela Chung</b> All rights reserved.</p>
         </small>
       </footer>
