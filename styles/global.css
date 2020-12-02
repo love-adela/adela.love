@@ -18,10 +18,15 @@ body {
 a {
   color: #004daa;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+b {
+  color: #004daa;
 }
 
 img {
