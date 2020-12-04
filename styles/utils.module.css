@@ -131,6 +131,6 @@
   padding: 0;
 }
 
-.markdownText ::marker {
+.markdownText ul > ::marker {
   font-size: 1.5rem;
 }
