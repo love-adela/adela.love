@@ -10,14 +10,17 @@
   -moz-box-pack:justify;
   justify-content: space-between;
   top: 0px;
-  padding: 0 6%;
+  padding: 0 2%;
   border-bottom: 1px solid #e1e4e6;
   height: 60px;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .headerLogo {
-  display: flex;
+  display: block;
+  float: left;
+  padding-left: 3%;
 }
 
 .headerLogo li {
@@ -35,8 +38,9 @@
 }
 
 .headerHomeAbout {
-  display: inline-block;
-  margin-left: auto;
+  display: block;
+  float: right;
+  padding-right: 3%;
 }
 
 .headerHomeAbout h2{
@@ -49,8 +53,7 @@
 
 .headerHomeImage {
   display: inline-block;
-  width: 50px;
+  width: 28px;
   height: auto;
-  padding-top: 3px;
   vertical-align: middle; 
 }
