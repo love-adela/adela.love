@@ -12,11 +12,9 @@ date: '2019-06-30'
 
 비교정렬에는 시간복잡도 O(n^2)과 O(nlogn)에 따라 다음과 같은 정렬 방법이 존재합니다.
 
-- O(n^2) 소트: bubble sort, selection sort, insertion sort
-
-- O(nlogn) 소트: quick sort, merge sort, heap sort
-
-- O(n^2) 소트와 O(nlogn) 소트를 섞은것: intro sort, tim sort
+* O(n^2) 소트: bubble sort, selection sort, insertion sort
+* O(nlogn) 소트: quick sort, merge sort, heap sort
+* O(n^2) 소트와 O(nlogn) 소트를 섞은것: intro sort, tim sort
 
 #### 1.1.1 Bubble Sort
 
