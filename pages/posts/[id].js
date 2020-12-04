@@ -17,7 +17,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </small>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className={utilStyles.markdownText} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   )

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
 .headingXl {
   font-size: 1.9rem;
   line-height: 1.3;
@@ -66,4 +68,69 @@
 .lightText {
   margin: 0;
   color: #999;
+}
+
+.markdownText h2{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.markdownText h3 {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  font-size: 1.3rem;
+}
+
+.markdownText h4 {
+  padding-top: 5px;
+  font-size: 1.2rem;
+}
+
+.markdownText p {
+  line-height: 1.9rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.markdownText blockquote {
+  margin: 20px 0 20px 25px;
+  padding-left: 12px;
+  border-left: 3px solid #e1e4e6;
+}
+
+.markdownText pre {
+  margin: 2rem 2rem 2rem 0;
+  padding: 1.5rem;
+}
+
+.markdownText p code {
+  font-family: 'Fira Mono', monospace;
+  background-color: #E3F2FD;
+  padding: .2em;
+	overflow: auto;
+  border-radius: 0.3em;
+}
+
+.markdownText ol {
+  margin: 15px 0 0 20px;
+}
+
+.markdownText ul {
+  margin: 15px 0 0 25px;
+}
+
+.markdownText li {
+  margin: 10px 0;
+  line-height: 1.8rem;
+}
+
+.markdownText li > p {
+  margin: 0;
+  padding: 0;
+}
+
+.markdownText ::marker {
+  font-size: 1.5rem;
 }
