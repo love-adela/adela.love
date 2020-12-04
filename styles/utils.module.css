@@ -103,6 +103,7 @@
 .markdownText pre {
   margin: 2rem 2rem 2rem 0;
   padding: 1.5rem;
+  line-height: 1.3rem;
 }
 
 .markdownText p code {
