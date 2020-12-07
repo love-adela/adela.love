@@ -6,7 +6,7 @@ import NavBar from './navbar'
 
 const name = 'adela.love'
 export const siteTitle = 'adela.love'
-export const siteImage = 'https://raw.githubusercontent.com/love-adela/adela.love/main/public/images/og_image.jpg'
+export const siteImage = 'https://adela.love/og_image.jpg'
 
 export default function Layout({ children, home }) {
   return (
@@ -17,6 +17,7 @@ export default function Layout({ children, home }) {
         {/* Open Graph */}
         <meta property="og:url" content="https://adela.love" />
         <meta name="og:title" content={siteTitle} key="ogtitle"/>
+        <meta property="og:type" content="profile" />
         <meta property="og:description" content="Adela Chung, developer & writer" />
         <meta property="og:image" content={siteImage} key="ogimage"/>
         <meta property="og:image:width" content="598" />
@@ -24,7 +25,9 @@ export default function Layout({ children, home }) {
 
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@love__adela" />
+        <meta name="twitter:creator" content="@love__adela" />
       </Head>
       {home ? (
         <>
