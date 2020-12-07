@@ -6,6 +6,7 @@ import NavBar from './navbar'
 
 const name = 'adela.love'
 export const siteTitle = 'adela.love'
+export const siteImage = 'https://raw.githubusercontent.com/love-adela/adela.love/main/public/images/og_image.jpg'
 
 export default function Layout({ children, home }) {
   return (
@@ -15,14 +16,14 @@ export default function Layout({ children, home }) {
         <meta
           name="description"
           content="Adela의 블로그"
+          key="ogdesc"
         />
         <meta
           property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https://raw.githubusercontent.com/love-adela/adela.love/main/public/images/og_image.jpg`}
+          content={siteImage}
+          key="ogimage"
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={siteTitle} key="ogtitle"/>
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       {home ? (
