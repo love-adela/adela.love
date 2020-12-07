@@ -6,7 +6,7 @@ import NavBar from './navbar'
 
 const name = 'adela.love'
 export const siteTitle = 'adela.love'
-export const siteImage = 'https://adela.love/og_image.jpg'
+export const siteImage = 'https://github.com/love-adela/adela.love/blob/main/public/images/og_image.jpg'
 
 export default function Layout({ children, home }) {
   return (
