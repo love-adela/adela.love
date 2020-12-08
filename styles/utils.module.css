@@ -6,6 +6,8 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .headingLg {
@@ -56,6 +58,8 @@
 .listItem h2 {
   margin-bottom: 0.4rem;
   font-size: 1.5rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .listItem h3 {
@@ -63,6 +67,8 @@
   color: #616161;
   font-size: 1.2rem;
   font-weight: 400;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .lightText {
