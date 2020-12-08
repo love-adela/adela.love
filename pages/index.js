@@ -9,7 +9,8 @@ export default function Home({allPostsData}) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+      <meta property="og:type" content="profile" />
+      <meta property="og:description" content="Adela Chung, developer & writer" key="ogdesc" />
       </Head>
       <section className={utilStyles.headingMd}>
       </section>

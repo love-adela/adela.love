@@ -8,7 +8,10 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>adela.love | {postData.title}</title>
+        <meta name="og:title" content={postData.title} key="ogtitle"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content={postData.subtitle} />
       </Head>
       <article>
         <div className={utilStyles.header}>

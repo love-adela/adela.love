@@ -13,12 +13,9 @@ export default function Layout({ children, home }) {
     <div className={styles.wrapper}>
       <Head>
         {/* <link rel="icon" href="/favicon.ico" /> */}
-        <meta name="description" content="Adela의 블로그" key="ogdesc"/>
         {/* Open Graph */}
         <meta property="og:url" content="https://adela.love" />
         <meta name="og:title" content={siteTitle} key="ogtitle"/>
-        <meta property="og:type" content="profile" />
-        <meta property="og:description" content="Adela Chung, developer & writer" />
         <meta property="og:image" content={siteImage} key="ogimage"/>
         <meta property="og:image:width" content="598" />
         <meta property="og:image:height" content="425" />
