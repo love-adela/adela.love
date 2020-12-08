@@ -70,6 +70,10 @@
   color: #999;
 }
 
+.markdownText a {
+  word-break: break-all;
+}
+
 .markdownText h2{
   padding-top: 20px;
   padding-bottom: 10px;
