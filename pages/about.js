@@ -7,6 +7,10 @@ export default function About() {
     <Layout>
       <Head>
         <title>{siteTitle} | about</title>
+        <meta property="og:url" content="https://adela.love" />
+        <meta name="og:title" content={siteTitle} key="ogtitle"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Adela Chung, developer & writer" key="ogdesc" />
       </Head>
       <h2 className={utilStyles.headingXl}>환영합니다!</h2>
       <p>
