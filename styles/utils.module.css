@@ -36,10 +36,6 @@
   display: flex;
 }
 
-/* .header > small {
-  margin: 1.8rem;
-} */
-
 .borderCircle {
   border-radius: 9999px;
 }
