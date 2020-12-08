@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
+@media screen and (max-width:768px) {
+  .header {
+    flex-wrap: wrap;
+  }  
+}
+
+@media screen and (min-width:768px) {
+  .header > small {
+    margin: 1.8rem;
+  }
+}
+
+
 .headingXl {
   font-size: 1.9rem;
   line-height: 1.3;
@@ -24,9 +37,9 @@
   display: flex;
 }
 
-.header small {
+/* .header > small {
   margin: 1.8rem;
-}
+} */
 
 .borderCircle {
   border-radius: 9999px;
