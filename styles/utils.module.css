@@ -132,6 +132,14 @@
   padding: 0;
 }
 
+.markdownText li > code {
+  font-family: 'Fira Mono', monospace;
+  background-color: #E3F2FD;
+  padding: .2em;
+	overflow: auto;
+  border-radius: 0.3em;
+}
+
 .markdownText ul > ::marker {
   font-size: 1.5rem;
 }
