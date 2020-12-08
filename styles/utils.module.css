@@ -109,7 +109,8 @@
   line-height: 1.9rem;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: justify;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .markdownText blockquote {
