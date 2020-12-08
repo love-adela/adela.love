@@ -138,12 +138,14 @@
 }
 
 .markdownText ul {
-  margin: 15px 0 0 25px;
+  margin: 15px 0 0 10px;
 }
 
 .markdownText li {
   margin: 10px 0;
   line-height: 1.8rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .markdownText li > p {
