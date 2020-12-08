@@ -19,6 +19,7 @@ a {
   color: #004daa;
   text-decoration: none;
   cursor: pointer;
+  word-break: break-all;
 }
 
 a:hover {
