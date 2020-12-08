@@ -15,11 +15,9 @@ export default function Layout({ children, home }) {
         {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* Open Graph */}
         <meta property="og:url" content="https://adela.love" />
-        <meta name="og:title" content={siteTitle} key="ogtitle"/>
         <meta property="og:image" content={siteImage} key="ogimage"/>
         <meta property="og:image:width" content="598" />
         <meta property="og:image:height" content="425" />
-
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />

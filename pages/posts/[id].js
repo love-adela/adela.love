@@ -9,7 +9,7 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>adela.love | {postData.title}</title>
-        <meta property="og:url" content="https://adela.love" />
+        {/* Open Graph */}
         <meta name="og:title" content={postData.title} key="ogtitle"/>
         <meta property="og:type" content="article" />
         <meta property="og:description" content={postData.subtitle} />
