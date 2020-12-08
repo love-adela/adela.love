@@ -117,4 +117,6 @@ Pull request를 보낸 후 Details를 누르시면 PR을 머지했을 때 어떤
 - 변수명을 수정해야 할 때는 `terraform state mv`를 사용합니다. 만일 코드에서 변수명을 그냥 바꾸게 된다면, 기존 자원을 삭제하고 새 자원을 만드는 것으로 인식하니 주의가 필요합니다.
 - `*.tf` 파일을 지우기 전에 `terraform state rm`을 해줘야 합니다. 코드에서 그냥 파일을 지우게 되면 그 자원을 정말로 삭제하게 됩니다. 만일 자원을 삭제하지는 않되, Terraform이 그 자원을 더이상 추적하지 않게 하려면 state를 사용해서 rm 명령을 사용해야 합니다.
 
+## Femiwiki 오픈소스 활동을 권합니다.
+
 주류 위키들의 남성 중심적이고 여성 혐오적인 정보에 반대하여 약자와 소수자를 위해 만들어진 여성주의 정보 집합체 [페미위키](femiwiki.com)는 언제든 여러분의 [오픈소스](https://github.com/femiwiki/femiwiki) 기여를 기다립니다. 페미위키는 모든 소스코드를 오픈소스로 공개하고 있고, [이슈트래커](https://github.com/femiwiki/femiwiki/issues)와 [대화 공간](https://discord.com/invite/qqdp3tjW?utm_source=Discord%20Widget&utm_medium=Connect)을 공개하고 있기 때문에 운영진이 아닌 분도 개발에 참여할 수 있습니다.
