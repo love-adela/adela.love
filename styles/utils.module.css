@@ -38,6 +38,12 @@
   line-height: 1.9;
 }
 
+.orderedlist {
+  word-break: keep-all;
+  overflow: break-word;
+  line-height: 1.9;
+}
+
 .header {
   display: flex;
 }
