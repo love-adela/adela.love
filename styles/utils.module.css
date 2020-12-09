@@ -32,6 +32,12 @@
   line-height: 1.5;
 }
 
+.paragraph {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.9;
+}
+
 .header {
   display: flex;
 }
