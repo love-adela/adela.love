@@ -41,7 +41,8 @@
 .orderedlist {
   word-break: keep-all;
   overflow: break-word;
-  line-height: 1.9;
+  line-height: 1.9;  
+  padding-left: 20px;
 }
 
 .header {
