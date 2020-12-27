@@ -119,4 +119,4 @@ Pull request를 보낸 후 Details를 누르시면 PR을 머지했을 때 어떤
 
 ## Femiwiki 오픈소스 활동을 권합니다.
 
-주류 위키들의 남성 중심적이고 여성 혐오적인 정보에 반대하여 약자와 소수자를 위해 만들어진 여성주의 정보 집합체 [페미위키](femiwiki.com)는 언제든 여러분의 [오픈소스](https://github.com/femiwiki/femiwiki) 기여를 기다립니다. 페미위키는 모든 소스코드를 오픈소스로 공개하고 있고, [이슈트래커](https://github.com/femiwiki/femiwiki/issues)와 [대화 공간](https://discord.com/invite/qqdp3tjW?utm_source=Discord%20Widget&utm_medium=Connect)을 공개하고 있기 때문에 운영진이 아닌 분도 개발에 참여할 수 있습니다.
+주류 위키들의 남성 중심적이고 여성 혐오적인 정보에 반대하여 약자와 소수자를 위해 만들어진 여성주의 정보 집합체 [페미위키](https://femiwiki.com/)는 언제든 여러분의 [오픈소스](https://github.com/femiwiki/femiwiki) 기여를 기다립니다. 페미위키는 모든 소스코드를 오픈소스로 공개하고 있고, [이슈트래커](https://github.com/femiwiki/femiwiki/issues)와 [대화 공간](https://discord.com/invite/qqdp3tjW?utm_source=Discord%20Widget&utm_medium=Connect)을 공개하고 있기 때문에 운영진이 아닌 분도 개발에 참여할 수 있습니다.
