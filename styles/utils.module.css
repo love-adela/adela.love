@@ -3,7 +3,11 @@
 @media screen and (max-width:768px) {
   .header {
     flex-wrap: wrap;
-  }  
+  } 
+  .header > small {
+    align-self: center;
+    margin-left: 1.8rem;
+  }
 }
 
 @media screen and (min-width:768px) {
