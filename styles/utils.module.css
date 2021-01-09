@@ -177,3 +177,8 @@
 .markdownText ul > ::marker {
   font-size: 1.5rem;
 }
+
+.markdownText img {
+  display: block;
+  margin: 0 auto;
+}
