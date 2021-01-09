@@ -42,6 +42,7 @@ export default function About() {
       <h2 className={utilStyles.headingLg}>Contacts</h2>
       <p>💌 love.adelar@gmail.com</p>
       <p>💌 github.com/love-adela</p>
+      <p>🔑 my public key is <a href="https://gist.github.com/love-adela/18763342dd2519705deb953f3c0f2799">here</a></p>
     </Layout>
   )
 }
