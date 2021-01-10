@@ -12,7 +12,7 @@ date: '2021-01-09'
 
 대칭 암호화를 논하기 전에, 먼저 가벼운 용어 정리부터 해볼까 해요.
 
-암호화 기법에는 여러 가지가 있는데요. 시간을 거슬러 올라가 옛날 사람들이 쓰던 방식을 먼저 소개하고자 합니다. 약 2,500년 전 스파르타에서 군대에서 원통 막대기를 활용해 사용하던 암호 기법([스키테일](https://en.wikipedia.org/wiki/Scytale))과 율리어스 시저(Julius Caesar)가 사용한 [카이사르 암호 기법](https://en.wikipedia.org/wiki/Caesar_cipher)이 있어요. 이번 글에서는 그중 카이사르 암호 기법을 살짝 엿보겠습니다.
+암호화 기법에는 여러 가지가 있는데요. 시간을 거슬러 올라가 옛날 사람들이 쓰던 방식을 먼저 소개하고자 합니다. 약 2,500년 전 스파르타 군대에서는 원통 막대기를 활용해 [스키테일](https://en.wikipedia.org/wiki/Scytale)이라는 암호 기법을 사용했고, 율리어스 시저(Julius Caesar)는 [카이사르 암호 기법](https://en.wikipedia.org/wiki/Caesar_cipher)을 사용했었답니다. 이번 글에서는 그중 카이사르 암호 기법의 컨셉을 살짝 엿보겠습니다.
 
 ![Caesar's Encryption](https://raw.githubusercontent.com/love-adela/adela.love/main/public/images/caesar.svg.png)
 
