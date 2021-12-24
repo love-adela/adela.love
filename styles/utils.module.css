@@ -72,11 +72,11 @@
 }
 
 .listItem {
-  padding: 1.3rem 0.9rem 1.3rem;
+  border-bottom: 1px solid #e1e4e6;
+  padding: 2rem 0.9rem;
 }
 
 .listItem:hover {
-  border-radius: 13px;
   background-color: #FAFAFA;
 }
 
@@ -185,4 +185,22 @@
 .markdownText img {
   display: block;
   margin: 0 auto;
+}
+
+.copyrightText img {
+  display: block;
+  margin: 0 auto;
+}
+
+.copyrightText {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.copyrightText p {
+  line-height: .8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
