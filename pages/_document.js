@@ -11,7 +11,6 @@ class MyDocument extends Document {
     return (
       <Html lang="kr">
         <Head>
-        <title>adela.love | {siteTitle}</title>
         </Head>
         <body>
           <Main />
