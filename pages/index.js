@@ -24,15 +24,16 @@ export default function Home({allPostsData}) {
                 <a><h2>{title}</h2></a>
               </Link>
               <Link href={`/posts/${id}`}>
-                <a><h3>{subtitle}</h3></a>
-              </Link>
-              <Link href={`/posts/${id}`}>
                 <a>
                   <small className={utilStyles.lightText}>
                     <Date dateString={date}/>
                   </small>
                 </a>
               </Link>
+              <Link href={`/posts/${id}`}>
+                <a><h3>{subtitle}</h3></a>
+              </Link>
+              
             </li>
           ))}
         </ul>
@@ -42,10 +43,35 @@ export default function Home({allPostsData}) {
 }
 
 export async function getStaticProps() {
+  
   const allPostsData = getSortedPostsData() 
   return {
     props: {
       allPostsData
     }
   }
+
+  const db = await myDB.connect ({
+    host: process.env.DB_HOST,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS
+  })
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
+
+// export async function getStaticProps() {
+//   const db = await myDB.connect ({
+//     host: process.env.DB_HOST,
+//     username: process.env.DB_USER,
+//     password: process.env.DB_PASS
+//   })
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   }
+// }

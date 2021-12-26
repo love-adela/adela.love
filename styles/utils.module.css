@@ -78,6 +78,13 @@
 
 .listItem:hover {
   background-color: #FAFAFA;
+  border-top: 1px solid #00b9da;
+  border-bottom: 1px solid #00b9da;
+  color: #00b9da;
+}
+
+.listItem:hover h2 {
+  color: #00b9da;
 }
 
 .listItem h2 {
@@ -137,7 +144,7 @@
 }
 
 .markdownText pre {
-  margin: 2rem 2rem 2rem 0;
+  margin: 0;
   padding: 1.5rem;
   line-height: 1.3rem;
 }
@@ -152,10 +159,6 @@
 
 .markdownText ol {
   margin: 15px 0 0 20px;
-}
-
-.markdownText ul {
-  margin: 15px 0 0 10px;
 }
 
 .markdownText li {
