@@ -14,13 +14,16 @@
   border-bottom: 1.5px solid #e1e4e6;
   height: 60px;
   width: 100%;
+  max-width: 48rem;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .headerLogo {
   display: block;
   float: left;
-  padding-left: 3%;
+  padding-left: 0;
 }
 
 .headerLogo li {
@@ -49,6 +52,25 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   color: #424242; 
+}
+
+.headerHomeAbout span{
+  background-color: #00b9da;
+  box-sizing: inherit;
+  color: black;
+  display: 10px 8px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+@keyframes aboutKeyShake {
+  50% {
+  transform: rotate(10deg)
+  }
+}
+.headerHomeAbout span:hover{
+  animation: aboutKeyShake .4s linear;
 }
 
 .headerHomeImage {

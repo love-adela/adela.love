@@ -15,7 +15,7 @@ export default function NavBar() {
           </Link>
           <Link href="/about">
             <div className={styles.headerHomeAbout}>
-              <a><h2>About</h2></a>
+              <a><span className={styles.headerHomeAbout}>About</span></a>
             </div>
         </Link>
       </nav>
