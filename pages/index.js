@@ -1,15 +1,40 @@
-import Date from '../components/date'
+// import Date from '../../components/date'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
+// import { getAllPostIds, getPostData } from '../../lib/posts'
+// import { GetStaticPaths, GetStaticProps } from 'next'
 
-export default function Home({allPostsData}) {
+// export async function getStaticProps() {
+//   const posts = await getAllFilesFrontMatter('blog')
+
+//   return { props: { posts }}
+// }
+
+// ?
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData
+//   // const postDetails = await getFileBySlug('tags', ['default'])
+//   return { props: {allPostsData } }
+// }
+// ?
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Post({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout post>
       <Head>
-      <title>{siteTitle}</title>
+        <title>{siteTitle}</title>
       {/* Open Graph */}
       <meta property="og:type" content="profile" />
       <meta property="og:description" content="Adela Chung, developer & writer" key="ogdesc" />
