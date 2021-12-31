@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import NavBar from './navbar'
+import Header from './header'
 
 const name = 'adela.love'
 export const siteTitle = 'adela.love'
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
       </Head>
       {home ? (
         <>
-          <NavBar />
+          <Header />
         </>
       ) : (
       <header className={styles.header}>
