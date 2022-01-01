@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%; /* correct */
+  padding-top: 5px;
+  height: 100%;
+}
+
+.headerNavbar {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.headerTitleWrap {
+  float: left;
+  flex: auto;
+  font-size: 30px;
+  color: #81878b;
+  display: flex;
+  height: 100%;
+}
+
+.headerTitleWrap h1 {
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.headerSpecWrap ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerSpecItems {
+  padding: 16px;
+}
+
+
+/* key shake */
+@keyframes aboutKeyShake {
+  50% {
+  transform: rotate(10deg)
+  }
+}
+.headerSpecItems span:hover{
+  animation: aboutKeyShake .4s linear;
+}
+
+.headerHomeImage {
+  display: inline-block;
+  width: 28px;
+  height: auto;
+  vertical-align: middle; 
+}
