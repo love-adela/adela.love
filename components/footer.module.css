@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.footerCopyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+} 
