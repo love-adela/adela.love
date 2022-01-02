@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import utilStyles from '../styles/utils.module.css'
 import styles from './header.module.css'
 
 export default function Header() {

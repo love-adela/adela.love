@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%; /* correct */
+  max-width: 100%;
   padding-top: 5px;
   height: 100%;
 }
@@ -12,7 +12,7 @@
 .headerNavbar {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
 }
 
 .headerTitleWrap {
