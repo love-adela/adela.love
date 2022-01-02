@@ -1,102 +1,35 @@
-// import Date from '../../components/date'
-import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-// import { getAllPostIds, getPostData } from '../../lib/posts'
-// import { GetStaticPaths, GetStaticProps } from 'next'
 
-// export async function getStaticProps() {
-//   const posts = await getAllFilesFrontMatter('blog')
-
-//   return { props: { posts }}
-// }
-
-// ?
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData
-//   // const postDetails = await getFileBySlug('tags', ['default'])
-//   return { props: {allPostsData } }
-// }
-// ?
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-export default function Post({ allPostsData }) {
+export default function Home() {
   return (
-    <Layout post>
-      <Head>
-        <title>{siteTitle}</title>
-      {/* Open Graph */}
-      <meta property="og:type" content="profile" />
-      <meta property="og:description" content="Adela Chung, developer & writer" key="ogdesc" />
-      </Head>
-      <section className={utilStyles.headingMd}>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, subtitle }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a><h2>{title}</h2></a>
-              </Link>
-              <Link href={`/posts/${id}`}>
-                <a>
-                  <small className={utilStyles.lightText}>
-                    <Date dateString={date}/>
-                  </small>
-                </a>
-              </Link>
-              <Link href={`/posts/${id}`}>
-                <a><h3>{subtitle}</h3></a>
-              </Link>
-              
-            </li>
-          ))}
-        </ul>
-      </section>
+    <Layout home>
+      <article class={utilStyles.homeIntroduction}>
+        <div class={utilStyles.homeResume}>
+          <div class={utilStyles.resumetitle}>
+            <h3>Experience</h3>
+            <div class={utilStyles.resumeCompany}>
+              <p>Data Engineer</p>
+              <p>Dable</p>
+              <p>Feb, 2021 - Present</p>
+            </div>
+          </div>
+          <div class={utilStyles.resumetitle}>
+            <h3>Education</h3>
+            <div class={utilStyles.resumeUniversity}>
+              <p>Computer Engineering & Science</p>
+              <p>Sungshin Women's University</p>
+              <p>Mar, 2014 - Feb, 2019</p>
+            </div>
+          </div>
+          <div class={utilStyles.resumetitle}>
+            <h3>Tech Stack</h3>
+            <div class={utilStyles.resumeSkills}>
+              <p>Python3</p>
+            </div>
+          </div>
+        </div>
+      </article>
     </Layout>
   )
 }
-
-export async function getStaticProps() {
-  
-  const allPostsData = getSortedPostsData() 
-  return {
-    props: {
-      allPostsData
-    }
-  }
-
-  const db = await myDB.connect ({
-    host: process.env.DB_HOST,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS
-  })
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-// export async function getStaticProps() {
-//   const db = await myDB.connect ({
-//     host: process.env.DB_HOST,
-//     username: process.env.DB_USER,
-//     password: process.env.DB_PASS
-//   })
-//   return {
-//     props: {
-//       allPostsData
-//     }
-//   }
-// }
