@@ -6,15 +6,13 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={styles.headerNavbar}>
-          <Link href="/">
-              <div className={styles.headerTitleWrap}>
-                <h1>adela.love</h1>
-              </div>
-          </Link>
+          <div className={styles.headerTitleWrap}>
+              <h1><Link href="/">adela.love</Link></h1>
+          </div>
           <div className={styles.headerSpecWrap}>
             <ul class={styles.headerSpecMenu}>
               <li className={styles.headerSpecItems}>
-                <Link href="/post">Post</Link></li>
+                <Link href="/posts">Post</Link></li>
               <li className={styles.headerSpecItems}>
                 <Link href="/essay">Essay</Link></li>
             </ul>
@@ -25,3 +23,11 @@ export default function Header() {
   )
 }
 
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}

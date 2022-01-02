@@ -187,7 +187,7 @@
   margin: 0 auto;
 }
 
-.copyrightText img {
+/* .copyrightText img {
   display: block;
   margin: 0 auto;
 }
@@ -203,4 +203,30 @@
   padding-bottom: 10px;
   word-break: keep-all;
   overflow-wrap: break-word;
+} */
+
+.homeIntroduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding-top: 5%;
+}
+
+.homeResume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.homeResume h3 {
+  font-size: 1.3rem !important;
+  line-height: 2.5rem !important;
+  padding-top: 1.5rem;
+}
+
+.resumeTitle {
+  display: flex;
+  justify-content: space-between;
 }
