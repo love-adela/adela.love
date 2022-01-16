@@ -1,5 +1,6 @@
 import utilStyles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,23 +9,27 @@ export default function Home() {
         <div class={utilStyles.homeResume}>
           <div class={utilStyles.resumetitle}>
             <h3 class={utilStyles.resumeItem}>Experience</h3>
-            <div class={utilStyles.resumeCompany}>
+            <div class={utilStyles.resumeSpec}>
               <p>Data Engineer</p>
-              <p>Dable</p>
+              <Link href="https://dable.io">
+              <a class={utilStyles.resumeCompany}>Dable</a>
+              </Link>
               <p>Feb, 2021 - Present</p>
             </div>
           </div>
+          <br/>
           <div class={utilStyles.resumetitle}>
             <h3 class={utilStyles.resumeItem}>Education</h3>
-            <div class={utilStyles.resumeUniversity}>
+            <div class={utilStyles.resumeSpec}>
               <p>Computer Engineering & Science</p>
               <p>Sungshin Women's University</p>
               <p>Mar, 2014 - Feb, 2019</p>
             </div>
           </div>
+          <br/>
           <div class={utilStyles.resumetitle}>
             <h3 class={utilStyles.resumeItem}>Tech Stack</h3>
-            <div class={utilStyles.resumeSkills}>
+            <div class={utilStyles.resumeSpec}>
               <p>Python3</p>
             </div>
           </div>

@@ -14,17 +14,17 @@ export default function PostPage({ allPostsData }) {
         </Head>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <div className={utilStyles.list}>
-            {allPostsData.map(({ id, date, title, description }) => (
+            {allPostsData.map(({ id, date, title, subtitle }) => (
               <Link href={`/posts/${id}`}>
                 <a>
                   <div className={utilStyles.listItem} key={id}>
-                    {title}
-                  <small className={utilStyles.lightText}>
-                    <Date dateString={date} />
-                  </small>
-                  {description}
-                  </div>
-                  <br />
+                    <h2 className={utilStyles.listItemTitle}>{title}</h2>
+                    <small className={utilStyles.lightText}>
+                      <Date dateString={date} />
+                    </small>
+                    <h3 className={utilStyles.listItemSubtitle}>{subtitle}</h3>
+                    </div>
+                    <br />
                 </a>
               </Link>
             ))}

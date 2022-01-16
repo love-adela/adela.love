@@ -14,7 +14,7 @@ export default function PostPage({ allEssaysData }) {
         </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.list}>
-          {allEssaysData.map(({ id, date, title, description }) => (
+          {allEssaysData.map(({ id, date, title, subtitle }) => (
             <Link href={`/essays/${id}`}>
               <a>
                 <div className={utilStyles.listItem} key={id}>
@@ -22,7 +22,7 @@ export default function PostPage({ allEssaysData }) {
                 <small className={utilStyles.lightText}>
                   <Date dateString={date} />
                 </small>
-                {description}
+                <div className={utilStyles.listItemSubtitle}>{subtitle}</div>
                 </div>
                 <br />
               </a>

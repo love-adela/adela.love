@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  padding-top: 5px;
+  padding-top: 10px;
   height: 100%;
 }
 
@@ -27,13 +27,13 @@
   height: 48px;
   align-items: center;
   font-weight: 900;
+  font-size: 40px;
 }
 
 .headerTitleWrap a:hover {
   color: #ff906e !important;
   text-decoration: underline !important;
 	text-decoration-color: #ddff6e !important;
-  text-decoration-thickness: 5px !important;
 }
 
 .headerSpecWrap ul {
@@ -53,7 +53,7 @@
   color: black !important;
   text-decoration: underline !important;
 	text-decoration-color: #ddff6e !important;
-  text-decoration-thickness: 5px !important;
+  background-color: #ddff6e;
 }
 
 /* key shake */

@@ -15,19 +15,19 @@
 }
 
 .headingXl {
-  font-size: 1.9rem;
+  font-size: 1.6em;
   line-height: 1.3;
   font-weight: 800;
   letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
 .headingLg {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 1.4;
-  margin: 3rem 0;
+  margin: 3em 0;
 }
 
 .headingMd {
@@ -82,19 +82,10 @@
   font-size: 1.5rem;
 }
 
-.lightText {
-  flex-direction: row;
-  padding-left: 30px;
-}
-
 .listItem:hover {
-  color: #6e95ff;
+  /* color: #ddff6e; */
   font-weight: 700;
-  border-bottom: 3px solid #ddff6e;
-}
-
-.listItem:hover h2 {
-  color: #6e95ff;
+  border-bottom: 1px solid #ddff6e;
 }
 
 .listItem h2 {
@@ -117,9 +108,18 @@
   font-size: .9rem;
 }
 
+.listItemSubtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 1.3rem;
+  color: #948ea6 !important;
+}
+
 .lightText {
   margin: 0;
   color: #999;
+  display: flex;
+  align-items: center;
 }
 
 .markdownText a {
@@ -127,28 +127,30 @@
 }
 
 .markdownText h2{
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 1.5rem;
+  padding-top: 2.3rem;
+  padding-bottom: 1.1rem;
+  font-size: 1.3em;
 }
 
 .markdownText h3 {
-  padding-top: 5px;
-  padding-bottom: 3px;
-  font-size: 1.3rem;
+  padding-top: 2.1rem;
+  padding-bottom: 1.1rem;;
+  font-size: 1.2em;
 }
 
 .markdownText h4 {
-  padding-top: 5px;
-  font-size: 1.2rem;
+  padding-top: 2.1rem;;
+  font-size: 1.1em;
 }
 
 .markdownText p {
+  font-size: .85em;
   line-height: 1.9rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: .5rem;
+  padding-bottom: .6rem;
   word-break: keep-all;
   overflow-wrap: break-word;
+  text-align: justify;
 }
 
 .markdownText blockquote {
@@ -159,25 +161,29 @@
 
 .markdownText pre {
   margin: 0;
-  padding: 1.5rem;
-  line-height: 1.3rem;
+  padding: 1.5rem 0 1.3rem .5rem;
+  line-height: 1.5rem;
+  background-color: #fafbf5;
 }
 
 .markdownText p code {
   font-family: 'Fira Mono', monospace;
-  background-color: #E3F2FD;
-  padding: .2em;
+  background-color: #fff6dc;
+  padding: .05rem;
 	overflow: auto;
   border-radius: 0.3em;
+  line-height: 1.9rem;
 }
 
 .markdownText ol {
-  margin: 15px 0 0 20px;
+  margin: 15px 0;
+  list-style-type: circle !important;
 }
 
 .markdownText li {
-  margin: 10px 0;
-  line-height: 1.8rem;
+  margin: .4em 0 0 1.7em;
+  font-size: .9em;
+  line-height: 1.8em;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
@@ -189,19 +195,19 @@
 
 .markdownText li > code {
   font-family: 'Fira Mono', monospace;
-  background-color: #E3F2FD;
-  padding: .2em;
+  background-color: #fff6dc;
+  padding: .5em;
 	overflow: auto;
   border-radius: 0.3em;
 }
 
 .markdownText ul > ::marker {
-  font-size: 1.5rem;
+  font-size: 1.7em;
 }
 
 .markdownText img {
   display: block;
-  margin: 0 auto;
+  margin: 1.5rem auto;
 }
 
 .copyrightText img {
@@ -215,9 +221,9 @@
 }
 
 .copyrightText p {
-  line-height: .8rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  line-height: .8em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
@@ -237,16 +243,50 @@
   width: 45%;
 }
 
+.resumeCompany {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #ddff6e;
+}
+
+.resumeCompany:hover {
+  text-decoration: underline;
+  text-decoration-color: #ddff6e;
+  background-color: #ddff6e;
+}                                           
+
 .resumeItem {
   font-size: 1.3rem !important;
   line-height: 1rem !important;
   padding-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #6e95ff;
+  margin-bottom: 1rem;
   font-weight: 900;
 }
 
 .resumeTitle {
   display: flex;
+  justify-content: space-between;
+}
+
+.resumeSpec {
+  padding-bottom: 30px;
+}
+
+.resumeSpec p {
+  line-height: 2.5rem;
+}
+
+.article {
+  margin: 8% auto 0;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+
+}
+
+/* 제목, 글쓴 날짜를 하나의 div로 보기 */
+.articleInfo {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }

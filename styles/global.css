@@ -26,12 +26,11 @@ a {
 }
 
 a:hover {
-  color: #6e95ff;
-  text-decoration: none;
+  text-decoration-color: #ddff6e;
 }
 
 b {
-  color: #004daa;
+  color: #ff906e;
 }
 
 img {
