@@ -82,13 +82,19 @@
   font-size: 1.5rem;
 }
 
+.lightText {
+  flex-direction: row;
+  padding-left: 30px;
+}
+
 .listItem:hover {
-  color: #906eff;
+  color: #6e95ff;
   font-weight: 700;
+  border-bottom: 3px solid #ddff6e;
 }
 
 .listItem:hover h2 {
-  color: #906eff;
+  color: #6e95ff;
 }
 
 .listItem h2 {
@@ -236,7 +242,7 @@
   line-height: 1rem !important;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #906eff;
+  color: #6e95ff;
   font-weight: 900;
 }
 

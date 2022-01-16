@@ -14,17 +14,18 @@ export default function PostPage({ allEssaysData }) {
         </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.list}>
-          {allEssaysData.map(({ id, date, title }) => (
+          {allEssaysData.map(({ id, date, title, description }) => (
             <Link href={`/essays/${id}`}>
-            <a>
-              <div className={utilStyles.listItem} key={id}>
-                {title}
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              </div>
-            </a>
+              <a>
+                <div className={utilStyles.listItem} key={id}>
+                  {title}
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+                {description}
+                </div>
+                <br />
+              </a>
           </Link>
           ))}
         </div>
@@ -37,7 +38,7 @@ export async function getStaticProps() {
   const allEssaysData = getSortedEssaysData()
   return {
     props: {
-        allEssaysData
+      allEssaysData
     }
   }
 }
