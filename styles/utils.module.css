@@ -83,9 +83,12 @@
 }
 
 .listItem:hover {
-  /* color: #ddff6e; */
   font-weight: 700;
   border-bottom: 1px solid #ddff6e;
+}
+
+.listItem:hover > h2 {
+  background-color: #ddff6e;
 }
 
 .listItem h2 {
@@ -93,6 +96,11 @@
   font-size: 1.5rem;
   word-break: keep-all;
   overflow-wrap: break-word;
+  display: inline;
+}
+
+.listItem h2:hover {
+  background-color: #ddff6e;
 }
 
 .listItem h3 {
@@ -284,7 +292,6 @@
 
 }
 
-/* 제목, 글쓴 날짜를 하나의 div로 보기 */
 .articleInfo {
   display: flex;
   flex-wrap: wrap;
