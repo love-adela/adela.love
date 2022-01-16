@@ -7,7 +7,7 @@ export default function Home() {
       <article class={utilStyles.homeIntroduction}>
         <div class={utilStyles.homeResume}>
           <div class={utilStyles.resumetitle}>
-            <h3>Experience</h3>
+            <h3 class={utilStyles.resumeItem}>Experience</h3>
             <div class={utilStyles.resumeCompany}>
               <p>Data Engineer</p>
               <p>Dable</p>
@@ -15,7 +15,7 @@ export default function Home() {
             </div>
           </div>
           <div class={utilStyles.resumetitle}>
-            <h3>Education</h3>
+            <h3 class={utilStyles.resumeItem}>Education</h3>
             <div class={utilStyles.resumeUniversity}>
               <p>Computer Engineering & Science</p>
               <p>Sungshin Women's University</p>
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
           <div class={utilStyles.resumetitle}>
-            <h3>Tech Stack</h3>
+            <h3 class={utilStyles.resumeItem}>Tech Stack</h3>
             <div class={utilStyles.resumeSkills}>
               <p>Python3</p>
             </div>

@@ -1,15 +1,18 @@
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPostIds, getEssayData } from '../../lib/essays'
 
-export default function Essay({ postData }) {
-  return 
+export default function Essay({ essayData }) {
+  return (
   <Layout>
-      {postData.title}
+      {essayData.title}
       <br />
-      {postData.id}
+      {essayData.id}
       <br />
-      {postData.date}
+      {essayData.date}
+      <br />
+      <div dangerouslySetInnerHTML={{ __html: essayData.contentHtml }} />
   </Layout>
+  )
 }
 
 export async function getStaticPaths() {
@@ -23,10 +26,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
      // Fetch necessary data for the blog post using params.id
-     const postData = getPostData(params.id)
+     const essayData = await getEssayData(params.id)
     return {
         props: {
-            postData
-        }
+            essayData,
+        },
     }
-    }
+}

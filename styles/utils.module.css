@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-
 @media screen and (max-width:768px) {
   .header {
     flex-wrap: wrap;
@@ -64,24 +62,32 @@
 
 .list {
   list-style: none;
-  padding: 0;
+  padding-top: 5%;
   margin: 0;
+}
+
+.list a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .listItem {
   border-bottom: 1px solid #e1e4e6;
   padding: 2rem 0.9rem;
+  width: 50%;
 }
 
 .listItem:hover {
   background-color: #FAFAFA;
-  border-top: 1px solid #00b9da;
-  border-bottom: 1px solid #00b9da;
-  color: #00b9da;
+  border-top: 1px solid #916eff;
+  border-bottom: 1px solid #916eff;
+  color: #916eff;
 }
 
 .listItem:hover h2 {
-  color: #00b9da;
+  color: #916eff;
 }
 
 .listItem h2 {
@@ -220,10 +226,13 @@
   width: 50%;
 }
 
-.homeResume h3 {
+.resumeItem {
   font-size: 1.3rem !important;
-  line-height: 2.5rem !important;
+  line-height: 1rem !important;
   padding-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  color: #916eff;
+  font-weight: 900;
 }
 
 .resumeTitle {

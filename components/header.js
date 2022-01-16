@@ -14,7 +14,7 @@ export default function Header() {
               <li className={styles.headerSpecItems}>
                 <Link href="/posts">Post</Link></li>
               <li className={styles.headerSpecItems}>
-                <Link href="/essay">Essay</Link></li>
+                <Link href="/essays">Essay</Link></li>
             </ul>
           </div>
         </div>
