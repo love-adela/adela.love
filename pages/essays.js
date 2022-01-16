@@ -20,8 +20,6 @@ export default function PostPage({ allEssaysData }) {
               <div className={utilStyles.listItem} key={id}>
                 {title}
               <br />
-                {id}
-              <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
