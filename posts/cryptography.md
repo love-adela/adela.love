@@ -49,13 +49,13 @@ Alice와 Bob이 디피-헬만 키 교환 방식으로 키를 교환하는 과정
 1. Alice와 Bob은 스파이입니다. 서로 같은 편인지 코드로 확인하기 위해 'Brown Green'이라는 색상을 비밀리에 주고받고 싶습니다.
 2. 하지만 Alice와 Bob이 통신 매체(예를 들어 카톡)로 주고받는 모든 이야기는 온 세상에 다 공개되고 있습니다. (단 혼잣말이나 혼자 갖고 있는 정보는 알려지지 않습니다.)
 3. Alice와 Bob은 특단의 조치를 취해야 합니다. 따라서 각자만의 secret 색깔을 정합니다.
-    * Alice는 'Red'를, Bob은 'Blue Green'를 골랐어요.
+  * Alice는 'Red'를, Bob은 'Blue Green'를 골랐어요.
 4. Alice와 Bob은 서로에게 카톡을 보내기 전에 'Yellow'에다가 각자만의 secret 색깔을 더합니다.
-    * Alice는 'Orange-tan', Bob은 'Light Blue'를 만들어냈겠네요.
+  * Alice는 'Orange-tan', Bob은 'Light Blue'를 만들어냈겠네요.
 5. Alice와 Bob은 각자가 만든 색을 카톡으로 상대에게 보냅니다.
-    * 사람들은 secret 색깔은 모르지만 Bob에게는 'Orage-tan'이, Alice에게는 'Light Blue'가 주어졌다는 건 알게 됩니다.
+  * 사람들은 secret 색깔은 모르지만 Bob에게는 'Orage-tan'이, Alice에게는 'Light Blue'가 주어졌다는 건 알게 됩니다.
 6. Alice와 Bob은 카톡으로 받은 색깔에 다시 한번 자신의 secret 색깔을 더합니다.
-    * Alice는 'Red'를 'Light Blue'에, Bob은 'Blue Green'을 'Orange-tan'에 섞습니다.
+  * Alice는 'Red'를 'Light Blue'에, Bob은 'Blue Green'을 'Orange-tan'에 섞습니다.
 7. Alice와 Bob은 둘 다 'Brown Green'이라는 색상을 얻습니다. 그 둘은 비로소 같은 편인지 확인할 수 있게 되었습니다.
 
 ![DHKX](https://raw.githubusercontent.com/love-adela/adela.love/main/public/images/dhkx.svg.png)
@@ -66,13 +66,13 @@ Alice와 Bob이 디피-헬만 키 교환 방식으로 키를 교환하는 과정
 
 Public Key와 Private key 두 가지를 가리키는 키쌍(Key pair)은 비대칭 암호화 알고리즘에서 다음과 같은 성질을 나타냅니다.
 
-* Public key
-  * 암호화: 가능
-  * 복호화: 불가능
+1. Public key
+* 암호화: 가능
+* 복호화: 불가능
 
-* Private key
-  * 암호화: 가능
-  * 복호화: 가능
+2. Private key
+* 암호화: 가능
+* 복호화: 가능
 
 때문에 비대칭 암호를 기반으로 한 다음과 같은 암호 알고리즘이 개발되기 시작합니다.
 
