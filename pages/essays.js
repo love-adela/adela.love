@@ -18,7 +18,7 @@ export default function PostPage({ allEssaysData }) {
             <Link href={`/essays/${id}`}>
               <a>
                 <div className={utilStyles.listItem} key={id}>
-                  {title}
+                <h2 className={utilStyles.listItemTitle}>{title}</h2>
                 <small className={utilStyles.lightText}>
                   <Date dateString={date} />
                 </small>
