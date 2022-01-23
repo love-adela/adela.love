@@ -2,13 +2,14 @@
 @media screen and (max-width:768px) {
   .header {
     justify-content: flex-start;
-    margin-left: 1.8rem;
     line-height: 60px;
-  } 
+    margin-left: 1rem; 
+  }
 
-  .article {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  .headerSpecWrap {
+    display: fflex;
+    align-content: space-between;
+    margin-left: 2rem;
   }
 
 }

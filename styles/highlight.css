@@ -29,7 +29,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
-	overflow: auto;
+	overflow: scroll;
 	border-radius: 0.3em;
 }
 
@@ -151,7 +151,7 @@ div.code-toolbar > .toolbar button {
 	color: inherit;
 	font: inherit;
 	line-height: normal;
-	overflow: visible;
+	overflow: scroll;
 	padding: 0;
 	-webkit-user-select: none; /* for button */
 	-moz-user-select: none;

@@ -2,7 +2,6 @@
 @media screen and (max-width:768px) { 
   .homeIntroduction {
     justify-content: flex-start;
-    margin-left: 1.8rem;
   }
 
   .resumeSpec {
@@ -11,6 +10,53 @@
 
   .homeResume {
     width: 100%;
+    margin-left: 1rem;
+  }
+  
+  .listItem {
+    width: 100%;
+  }
+
+  .listItem small {
+    font-weight: 500;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .postDate {
+    margin-top: 1.1rem;
+  }
+
+  .lightText time {
+    margin-top: 1.1rem;
+    font-weight: 300;
+  }
+
+
+  .headingMd {
+    margin: 0 1rem 0 1rem;
+  }
+
+  /* markdown */
+  .markdownText h3 {
+    padding-top: 1.1rem;
+  }
+
+  .markdownText p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .markdownText blockquote > p {
+    margin-left: 1rem;  
+  }
+
+  .markdownText li {
+    margin-left: 2rem;
   }
 }
 
@@ -27,15 +73,45 @@
   .homeResume {
     width: 45%;
   }
+
+  .article {
+    flex-direction: column;
+    width: 45%;
+    margin: 1rem auto 0;
+  }
+
+  .listItem {
+    width: 45%;
+  }
+
+  .lightText {
+    margin-top: 1rem;
+  }
+
+  .markdownText p {
+    font-size: 1.2rem;
+  }
+  .markdownText {
+    margin-top: 20px;
+  }
+  .markdownText blockquote p {
+    margin-left: 1rem;
+  }
+  .markdownText ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+
+  .markdownText ul li {
+    list-style-type: disc;
+  }
 }
 
-
 .headingXl {
-  font-size: 1.6em;
-  line-height: 1.3;
+  font-size: 1.3em;
+  line-height: 1rem;
   font-weight: 800;
   letter-spacing: -0.05rem;
-  margin: 1rem 0 1.5rem;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
@@ -73,13 +149,13 @@
 }
 
 .padding1px {
-  padding-top: 1px;
+  /* padding-top: 1px; */
 }
 
 .list {
   list-style: none;
-  padding-top: 5%;
   margin: 0;
+  padding-top: 5%;
 }
 
 .list a {
@@ -91,16 +167,25 @@
 
 .listItem {
   border-bottom: 1px solid #e1e4e6;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 45%;
-  font-weight: 700;
-  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .listItem:hover {
-  font-weight: 700;
   border-bottom: 1px solid #ddff6e;
+}
+
+.listItem h2 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  font-size: 1.3rem;
+  line-height: 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .listItem:hover > h2 {
@@ -109,10 +194,11 @@
 
 .listItem h2 {
   margin-bottom: 0.4rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   word-break: keep-all;
   overflow-wrap: break-word;
   display: inline;
+  padding-top: 0;
 }
 
 .listItem h2:hover {
@@ -126,21 +212,21 @@
   font-weight: 400;
   word-break: keep-all;
   overflow-wrap: break-word;
+  line-height: 1.7rem;
 }
 
 .listItem small {
   font-size: .9rem;
+  font-weight: 400;
 }
 
 .listItemSubtitle {
-  font-size: 1.3rem;
   font-weight: 500;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
   color: #948ea6 !important;
 }
 
 .lightText {
-  margin: 0;
   color: #999;
   display: flex;
   align-items: center;
@@ -150,63 +236,95 @@
   word-break: break-all;
 }
 
+.markdownText h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 .markdownText h2{
-  padding-top: 2.3rem;
-  padding-bottom: 1.1rem;
-  font-size: 1.3em;
+  padding-top: 1.2em;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .markdownText h3 {
-  padding-top: 2.1rem;
-  padding-bottom: 1.1rem;;
-  font-size: 1.2em;
+  padding-top: 1.2em;
+  padding-bottom: 1.1em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .markdownText h4 {
-  padding-top: 2.1rem;;
-  font-size: 1.1em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  font-size: .9em;
+  font-weight: 500;
 }
 
 .markdownText p {
-  font-size: .85em;
-  line-height: 1.9rem;
-  padding-top: .5rem;
-  padding-bottom: .6rem;
-  word-break: keep-all;
+  font-size: .8em;
+  line-height: 1.5rem;
+  word-break: break-all;
   overflow-wrap: break-word;
   text-align: justify;
 }
 
 .markdownText blockquote {
   margin: 20px 0 20px 25px;
-  padding-left: 12px;
-  border-left: 3px solid #e1e4e6;
+  border-left: 3px solid #ddff6e;
+  margin-left: 1rem;
 }
 
 .markdownText pre {
-  margin: 0;
-  padding: 1.5rem 0 1.3rem .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: .6em .6em .3em;
   line-height: 1.5rem;
-  background-color: #fafbf5;
+  background-color: #f9ffe7;
+  font-size: .9em;
+  overflow: scroll;
 }
 
 .markdownText p code {
   font-family: 'Fira Mono', monospace;
-  background-color: #fff6dc;
-  padding: .05rem;
+  font-size: .8em;
+  background-color: #f9ffe7;
+  padding: .2em .1em 0em .2em;
 	overflow: auto;
   border-radius: 0.3em;
   line-height: 1.9rem;
 }
 
+.markdownText code {
+  font-size: .8em;
+}
+
 .markdownText ol {
   margin: 15px 0;
-  list-style-type: circle !important;
+  counter-reset: item;
+  list-style: none;
+}
+
+.markdownText ol li {
+  counter-increment: step-counter;
+  position: relative;
+  margin: 1rem 0 1rem 2rem;
+  list-style-type: none;
+}
+
+.markdownText li::before {
+  content: counter(step-counter);
+  counter-increment: item;
+  display: inline-block;
+  position: absolute;
+  font-size: 0.8rem;
+  margin-left: -1em;
 }
 
 .markdownText li {
-  margin: .4em 0 0 1.7em;
-  font-size: .9em;
+  list-style: square;
+  font-size: .9rem;
   line-height: 1.8em;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -215,18 +333,20 @@
 .markdownText li > p {
   margin: 0;
   padding: 0;
+  font-size: 1em;
 }
 
 .markdownText li > code {
   font-family: 'Fira Mono', monospace;
   background-color: #fff6dc;
-  padding: .5em;
+  padding: .2em .1em 0em .2em;
 	overflow: auto;
   border-radius: 0.3em;
 }
 
 .markdownText ul > ::marker {
   font-size: 1.7em;
+
 }
 
 .markdownText img {
@@ -296,15 +416,17 @@
 }
 
 .article {
-  margin: 8% auto 0;
   display: flex;
   flex-direction: column;
-  width: 45%;
-
 }
 
 .articleInfo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.homeIntroduction {
+  font-size: .9rem;
 }
