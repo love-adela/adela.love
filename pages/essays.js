@@ -4,6 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedEssaysData } from '../lib/essays'
+import Header from '../components/header'
 
 
 export default function PostPage({ allEssaysData }) {
