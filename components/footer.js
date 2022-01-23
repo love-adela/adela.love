@@ -7,18 +7,19 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.footerElements}>
           <div className={styles.footerIntro}>
-          ✨ made with
+            <small>✨ made with</small>
             <Link href="https://nextjs.org">
               <small className={styles.footerText}> Next.js</small>
             </Link>
-              <small className={styles.footerText}> & </small>
+              <small> & </small>
             <Link href="https://vercel.com/">
-              <small> Vercel </small>
+              <small className={styles.footerText}> Vercel </small>
             </Link>
-              <small className={styles.footerText}> & </small>
+              <small> & </small>
             <Link href="https://github.com/love-adela/adela.love"> 
-              <small> source code ✨</small>
+              <small className={styles.footerText}> source code</small>
             </Link>
+              <small>✨</small>
           </div>
           <div className={styles.footerCopyright}>
             <p>© 2022 <b>Adela Chung</b> All rights reserved.</p>

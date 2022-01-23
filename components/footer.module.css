@@ -14,3 +14,10 @@
     padding-top: 3%;
     font-size: .8rem;
 } 
+
+
+.footerText:hover {
+    /* text-decoration: underline;
+    text-decoration-color: #ddff6e;  */
+    background-color: #ddff6e;
+}
