@@ -1,18 +1,34 @@
-@media screen and (max-width:768px) {
-  .header {
-    flex-wrap: wrap;
-  } 
-  .header > small {
-    align-self: center;
+/* Mobile */
+@media screen and (max-width:768px) { 
+  .homeIntroduction {
+    justify-content: flex-start;
     margin-left: 1.8rem;
+  }
+
+  .resumeSpec {
+    line-height: 1.5rem;
+  }
+
+  .homeResume {
+    width: 100%;
   }
 }
 
+/* Desktop & Ipad */
 @media screen and (min-width:768px) {
-  .header > small {
-    margin: 1.8rem;
+  .homeIntroduction {
+    justify-content: center;
+  }
+
+  .resumeSpec {
+    line-height: 1.7rem;
+  }
+
+  .homeResume {
+    width: 45%;
   }
 }
+
 
 .headingXl {
   font-size: 1.6em;
@@ -239,7 +255,6 @@
 .homeIntroduction {
   display: flex;
   align-items: center;
-  justify-content: center;
   max-width: 100%;
   padding-top: 5%;
 }
@@ -248,7 +263,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45%;
+  /* width: 45%; */
 }
 
 .resumeCompany {
@@ -277,11 +292,7 @@
 }
 
 .resumeSpec {
-  padding-bottom: 30px;
-}
-
-.resumeSpec p {
-  line-height: 2.5rem;
+  padding-bottom: .8rem;
 }
 
 .article {

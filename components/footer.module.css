@@ -1,13 +1,16 @@
 .footer {
     display: flex;
     justify-content: center;
-    padding-top: 1%;
+    margin-top: 10%;
     padding-bottom: 3%;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .footerCopyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 3%;
+    font-size: .8rem;
 } 
