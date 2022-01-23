@@ -9,7 +9,7 @@ export default function Footer() {
           <div className={styles.footerIntro}>
           ✨ made with
             <Link href="https://nextjs.org">
-              <small className={styles.footerText}>Next.js</small>
+              <small className={styles.footerText}> Next.js</small>
             </Link>
               <small className={styles.footerText}> & </small>
             <Link href="https://vercel.com/">
