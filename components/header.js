@@ -10,7 +10,7 @@ export default function Header() {
               <h1><Link href="/">adela.love</Link></h1>
           </div>
           <div className={styles.headerSpecWrap}>
-            <ul class={styles.headerSpecMenu}>
+            <ul className={styles.headerSpecMenu}>
               <li className={styles.headerSpecItems}>
                 <Link href="/posts">Post</Link></li>
               <li className={styles.headerSpecItems}>
