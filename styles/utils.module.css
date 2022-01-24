@@ -270,22 +270,8 @@
   line-height: 1.5rem;
   background-color: #f9ffe7;
   font-size: .9em;
-  overflow: scroll;
+  overflow: auto;
 }
-
-/* .markdownText pre::-webkit-scrollbar-track {
-  background-color: red;
-  width: 10px;
-}
-.markdownText pre::-webkit-scrollbar-thumb {
-  background-color: red;
-  /* width: 10px; */
-/* }
-.markdownText pre::-webkit-scrollbar-track {
-  background-color: blue;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 5px white;
-} */markdownText
 
 .markdownText p code {
   font-family: 'Fira Mono', monospace;
