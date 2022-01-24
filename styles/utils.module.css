@@ -3,30 +3,24 @@
   .homeIntroduction {
     justify-content: flex-start;
   }
-
   .resumeSpec {
     line-height: 1.5rem;
   }
-
   .homeResume {
     width: 100%;
     margin-left: 1rem;
   }
-  
   .listItem {
     width: 100%;
   }
-
   .listItem small {
     font-weight: 500;
   }
-
   .article {
     display: flex;
     flex-direction: column;
     margin: 1rem 1rem 1rem 1rem;
   }
-
   .postDate {
     margin-top: 1.1rem;
   }
@@ -148,10 +142,6 @@
   color: inherit;
 }
 
-.padding1px {
-  /* padding-top: 1px; */
-}
-
 .list {
   list-style: none;
   margin: 0;
@@ -167,8 +157,6 @@
 
 .listItem {
   border-bottom: 1px solid #e1e4e6;
-  padding-top: 1.5rem;
-  margin-top: .7rem;
   margin-bottom: 1rem;
   font-weight: 900;
 }
@@ -278,13 +266,26 @@
 .markdownText pre {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 1rem;
   padding: .6em .6em .3em;
   line-height: 1.5rem;
   background-color: #f9ffe7;
   font-size: .9em;
   overflow: scroll;
 }
+
+/* .markdownText pre::-webkit-scrollbar-track {
+  background-color: red;
+  width: 10px;
+}
+.markdownText pre::-webkit-scrollbar-thumb {
+  background-color: red;
+  /* width: 10px; */
+/* }
+.markdownText pre::-webkit-scrollbar-track {
+  background-color: blue;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+} */markdownText
 
 .markdownText p code {
   font-family: 'Fira Mono', monospace;
