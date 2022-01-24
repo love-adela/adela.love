@@ -255,6 +255,7 @@
   word-break: break-all;
   overflow-wrap: break-word;
   text-align: justify;
+  margin-top: 1rem;
 }
 
 .markdownText blockquote {
@@ -274,7 +275,6 @@
 }
 
 .markdownText p code {
-  font-family: 'Fira Mono', monospace;
   font-size: .8em;
   background-color: #f9ffe7;
   padding: .2em .1em 0em .2em;
@@ -284,6 +284,7 @@
 }
 
 .markdownText code {
+  font-family: 'IBM Plex Sans KR', 'PT Sans Caption', sans-serif;
   font-size: .8em;
 }
 

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 
 code[class*="language-"],
 pre[class*="language-"] {
-	font-family: 'Fira Mono', monospace;
-	font-size: 14px;
+	font-family: 'IBM Plex Sans KR', 'PT Sans Caption', sans-serif;
+	font-size: 1.5rem;
 	color: #212121;
 	text-align: left;
 	white-space: pre;
