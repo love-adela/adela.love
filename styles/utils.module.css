@@ -302,7 +302,6 @@
 }
 
 .markdownText li::before {
-  content: counter(step-counter);
   counter-increment: item;
   display: inline-block;
   position: absolute;
