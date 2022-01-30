@@ -1,9 +1,9 @@
 import { Fragment } from 'react'
-import Document, { DocumentContext, Head, Main, NextScript } from 'next/document'
+import Document, { Html, DocumentContext, Head, Main, NextScript } from 'next/document'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
 
-export default class CustomDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
     return {
@@ -14,7 +14,7 @@ export default class CustomDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
+      <Html>
         <Head>
           {(
             <Fragment>
@@ -43,7 +43,7 @@ export default class CustomDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
