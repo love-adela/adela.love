@@ -27,6 +27,7 @@
 
   .lightText time {
     margin-top: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
   }
 
@@ -187,6 +188,7 @@
 .listItem {
   border-bottom: 1px solid #e1e4e6;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
   font-weight: 900;
 }
 
@@ -198,7 +200,7 @@
   word-break: keep-all;
   overflow-wrap: break-word;
 
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1rem;
   padding-top: 1.5rem;
   margin-bottom: 1rem;
@@ -225,7 +227,7 @@
 .listItem h3 {
   margin-bottom: 0.4rem;
   color: #616161;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -239,6 +241,7 @@
 
 .listItemSubtitle {
   font-weight: 500;
+  font-size: 1rem;
   padding-top: 1rem;
   color: #948ea6 !important;
 }
@@ -394,7 +397,7 @@
   display: flex;
   align-items: center;
   max-width: 100%;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .homeResume {
@@ -417,7 +420,7 @@
 }                                           
 
 .resumeItem {
-  font-size: 1.3rem !important;
+  font-size: 1.2rem !important;
   line-height: 1rem !important;
   padding-top: 1.5rem;
   margin-bottom: 1rem;
