@@ -54,7 +54,6 @@ Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   float: left;
   flex: auto;
   font-size: 30px;
-  color: #ff906e !important;
   display: flex;
   height: 100%;
 }
@@ -65,11 +64,15 @@ Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   align-items: center;
   font-weight: 900;
   font-size: 40px;
-  color: #ff906e;
+  color: #ff906e !important;
+}
+
+.headerTitleWrap h1 > a {
+  color: #ff906e !important;
 }
 
 .headerTitleWrap a:hover {
-  color: #ff906e !important;
+  /* color: #ff906e !important; */
   text-decoration: underline !important;
 	text-decoration-color: #ddff6e !important;
 }
