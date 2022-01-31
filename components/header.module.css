@@ -67,9 +67,13 @@ Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   font-size: 40px;
 }
 
-.headerTitleWrap a:hover {
+.headerTitleWrap a {
   color: #ff906e !important;
   text-decoration: underline !important;
+	text-decoration-color: #ddff6e !important;
+}
+
+.headerTitleWrap a:hover {
 	text-decoration-color: #ddff6e !important;
 }
 
