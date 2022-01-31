@@ -1,6 +1,6 @@
 import Date from '../components/Date'
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout from '../components/layout'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
@@ -10,12 +10,11 @@ export default function PostPage({ allPostsData }) {
     return (
       <Layout>
         <Head>
-          <title>{siteTitle}</title>
         </Head>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <div className={utilStyles.list}>
             {allPostsData.map(({ id, date, title, subtitle }) => (
-              <Link href={`/posts/${id}`}>
+              <Link href={`/posts/${id}`} key={id}>
                 <a>
                   <div className={utilStyles.listItem} key={id}>
                     <h2 className={utilStyles.listItemTitle}>{title}</h2>
