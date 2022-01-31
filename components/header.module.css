@@ -76,6 +76,10 @@ Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 	text-decoration-color: #ddff6e !important;
 }
 
+.headerTitleWrap a:hover {
+	text-decoration-color: #ddff6e !important;
+}
+
 .headerSpecWrap ul {
   display: flex;
   flex-direction: flex-start;
