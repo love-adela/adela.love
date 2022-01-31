@@ -1,5 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
-import Layout, { siteTitle } from '../components/layout'
+import Layout from '../components/layout'
 import Link from 'next/link'
 
 export default function Home() {
