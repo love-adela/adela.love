@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import utilStyles from '../../styles/utils.module.css'
 import { getAllPostIds, getEssayData } from '../../lib/essays'
-import Date from '../../components/date'
+import Date from '../../components/Date'
 import Head from 'next/head'
 
 export default function Essay({ essayData }) {

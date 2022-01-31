@@ -1,4 +1,4 @@
-import Date from '../components/date'
+import Date from '../components/Date'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Link from 'next/link'
@@ -10,11 +10,12 @@ export default function PostPage({ allEssaysData }) {
     return (
       <Layout>
         <Head>
+          {/* <title>{siteTitle}</title> */}
         </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.list}>
           {allEssaysData.map(({ id, date, title, subtitle }) => (
-            <Link href={`/essays/${id}`}>
+            <Link href={`/essays/${id}`} key={id}>
               <a>
                 <div className={utilStyles.listItem} key={id}>
                 <h2 className={utilStyles.listItemTitle}>{title}</h2>
