@@ -5,6 +5,15 @@ import Date from '../../components/Date'
 import Head from 'next/head'
 
 export default function Essay({ essayData }) {
+  const license = 
+  `
+  <a class="license-url" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+  </a>
+  <br />
+  <p>This work is licensed under a</p>
+  <a class="license-url" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  `
   return (
   <Layout>
       <Head>
@@ -18,6 +27,7 @@ export default function Essay({ essayData }) {
           </div>
         </div>
         <div className={utilStyles.markdownText} dangerouslySetInnerHTML={{ __html: essayData.contentHtml }} />
+        <div className={utilStyles.markdownTextLicense} dangerouslySetInnerHTML={{ __html: license }} />
       </article>
   </Layout>
   )
