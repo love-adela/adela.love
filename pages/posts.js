@@ -10,7 +10,6 @@ export default function PostPage({ allPostsData }) {
     return (
       <Layout>
         <Head>
-          {/* <title>{siteTitle}</title> */}
         </Head>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <div className={utilStyles.list}>

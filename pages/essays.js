@@ -11,7 +11,6 @@ export default function PostPage({ allEssaysData }) {
     return (
       <Layout>
         <Head>
-          {/* <title>{siteTitle}</title> */}
         </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.list}>
