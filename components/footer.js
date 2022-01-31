@@ -8,15 +8,16 @@ export default function Footer() {
         <div className={styles.footerElements}>
           <div className={styles.footerIntro}>
             <small>✨ made with</small>
-            <Link href="https://nextjs.org">
+            <Link href={"https://nextjs.org"} passHref>
               <small className={styles.footerText}> Next.js</small>
             </Link>
               <small> & </small>
-            <Link href="https://vercel.com/">
+            <Link href={"https://vercel.com/"} passHref>
               <small className={styles.footerText}> Vercel </small>
             </Link>
               <small> & </small>
-            <Link href="https://github.com/love-adela/adela.love"> 
+            {/* <Link href="https://github.com/love-adela/adela.love">  */}
+            <Link href={"https://github.com/love-adela/adela.love"} passHref> 
               <small className={styles.footerText}> source code</small>
             </Link>
               <small>✨</small>
