@@ -1,12 +1,12 @@
 ---
-title: 'Mac OS 업데이트 이슈 Wiki'
-subtitle: 'Big Sur Version 11.1'
-date: '2021-01-20'
+title: 'Trouble Shooting Wiki'
+subtitle: '프로그래밍을 하다가 마주친 문제 해결 내용'
+date: '2022-05-09'
 ---
 
-Mac OS 업데이트 이후에 발생하는 이슈가 반복적으로 나타나, 트러블슈팅하는 방법을 위키로 정리해둔다. 마지막 OS 업데이트는 Big Sur Version 11.1이고 본 문서의 최종 수정일은 2021-01-20.
+## 1.CommandLineTools 관련 이슈
 
-## CommandLineTools 관련 이슈
+Mac OS 업데이트 이후에 발생하는 이슈가 반복적으로 나타나, 트러블슈팅하는 방법을 위키로 정리해둔다. 마지막 OS 업데이트는 Big Sur Version 11.1
 
 `brew doctor`, `git`을 실행하거나 컴파일 등 개발 툴을 실행했을 때, CommandLineTools의 버전이 너무 낮다고 경고하는 경우가 있다. 그럴 때엔 CommandLineTools를 재설치해서 버전을 올려줘야 한다.
 
@@ -37,3 +37,16 @@ Mac OS 업데이트 이후에 발생하는 이슈가 반복적으로 나타나, 
     ```
 
 * 참고: xcrun은 commandline에서 Xcode 내의 도구를 찾거나 실행할 수 있는 [shim](https://en.wikipedia.org/wiki/Shim_(computing)) 중 하나.
+
+--- 
+
+## 2. python3 가상환경에 **psycopg2**가 설치되지 않는 이슈
+2.1 "Failed building wheel for psycopg2" - MacOSX using virtualenv and pip
+
+Reference: https://stackoverflow.com/questions/34304833/failed-building-wheel-for-psycopg2-macosx-using-virtualenv-and-pip
+
+2.2 For MacOS users
+1. `brew install openssl` 설치
+2. openssl path를 LIBRARY_PATH를 다음으로 설정
+`export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/openssl/lib/`
+3. `pip3 install pyscopg2` 설치
