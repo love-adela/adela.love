@@ -268,7 +268,7 @@
 .markdownText h2 {
   padding-top: 1.5em;
   padding-bottom: 1em;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -321,7 +321,7 @@
 
 .markdownText code {
   font-family: 'IBM Plex Sans KR', 'PT Sans Caption', sans-serif;
-  font-size: 1em;
+  font-size: .8em;
 }
 
 .markdownText ol {
