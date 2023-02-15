@@ -22,7 +22,7 @@ export default function Footer() {
               <small>✨</small>
           </div>
           <div className={styles.footerCopyright}>
-            <p>© 2022 <b>Adela Chung</b> All rights reserved.</p>
+            <p>© 2023 <b>Adela Chung</b> All rights reserved.</p>
           </div>
         </div>
       </footer>
