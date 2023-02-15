@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "node ./build.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.2.6",
