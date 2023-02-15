@@ -14,7 +14,7 @@ export default function Home() {
               <Link href="https://dable.io">
               <a className={utilStyles.resumeCompany}>Dable</a>
               </Link>
-              <p>Feb, 2021 - Present</p>
+              <p>2021 - 2022</p>
             </div>
           </div>
           <br/>
