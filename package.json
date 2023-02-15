@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": { "node": "18.x" },
   "dependencies": {
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
