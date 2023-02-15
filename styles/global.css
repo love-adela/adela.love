@@ -1,5 +1,8 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+::selection {
+  background-color: #ddff6e;
+}
 
 body {
   padding: 0;
